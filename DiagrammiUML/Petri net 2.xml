@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><pnml>
+<net id="Net-One" type="P/T net">
+<token id="Default" enabled="true" red="0" green="0" blue="0"/>
+<place id="controlloPriorità">
+<graphics>
+<position x="90.0" y="195.0"/>
+</graphics>
+<name>
+<value>controlloPriorità</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</name>
+<initialMarking>
+<value>Default,0</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</initialMarking>
+<capacity>
+<value>0</value>
+</capacity>
+</place>
+<place id="implementazione">
+<graphics>
+<position x="345.0" y="150.0"/>
+</graphics>
+<name>
+<value>implementazione</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</name>
+<initialMarking>
+<value>Default,0</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</initialMarking>
+<capacity>
+<value>0</value>
+</capacity>
+</place>
+<place id="modifica veloce">
+<graphics>
+<position x="810.0" y="300.0"/>
+</graphics>
+<name>
+<value>modifica veloce</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</name>
+<initialMarking>
+<value>Default,0</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</initialMarking>
+<capacity>
+<value>0</value>
+</capacity>
+</place>
+<place id="next componente">
+<graphics>
+<position x="1035.0" y="180.0"/>
+</graphics>
+<name>
+<value>next componente</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</name>
+<initialMarking>
+<value>Default,0</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</initialMarking>
+<capacity>
+<value>0</value>
+</capacity>
+</place>
+<place id="reimplementazione necessaria">
+<graphics>
+<position x="705.0" y="480.0"/>
+</graphics>
+<name>
+<value>reimplementazione necessaria</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</name>
+<initialMarking>
+<value>Default,0</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</initialMarking>
+<capacity>
+<value>0</value>
+</capacity>
+</place>
+<place id="riunione del team">
+<graphics>
+<position x="570.0" y="195.0"/>
+</graphics>
+<name>
+<value>riunione del team</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</name>
+<initialMarking>
+<value>Default,0</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</initialMarking>
+<capacity>
+<value>0</value>
+</capacity>
+</place>
+<place id="timebox">
+<graphics>
+<position x="345.0" y="210.0"/>
+</graphics>
+<name>
+<value>timebox</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</name>
+<initialMarking>
+<value>Default,0</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</initialMarking>
+<capacity>
+<value>0</value>
+</capacity>
+</place>
+<transition id="conferma lavoro">
+<graphics>
+<position x="705.0" y="120.0"/>
+</graphics>
+<name>
+<value>conferma lavoro</value>
+<graphics>
+<offset x="-5.0" y="35.0"/>
+</graphics>
+</name>
+<orientation>
+<value>0</value>
+</orientation>
+<rate>
+<value>1.0</value>
+</rate>
+<timed>
+<value>false</value>
+</timed>
+<infiniteServer>
+<value>false</value>
+</infiniteServer>
+<priority>
+<value>1</value>
+</priority>
+</transition>
+<transition id="fine riunione">
+<graphics>
+<position x="930.0" y="300.0"/>
+</graphics>
+<name>
+<value>fine riunione</value>
+<graphics>
+<offset x="-5.0" y="35.0"/>
+</graphics>
+</name>
+<orientation>
+<value>0</value>
+</orientation>
+<rate>
+<value>1.0</value>
+</rate>
+<timed>
+<value>false</value>
+</timed>
+<infiniteServer>
+<value>false</value>
+</infiniteServer>
+<priority>
+<value>1</value>
+</priority>
+</transition>
+<transition id="proponi modifiche">
+<graphics>
+<position x="705.0" y="300.0"/>
+</graphics>
+<name>
+<value>proponi modifiche</value>
+<graphics>
+<offset x="-5.0" y="35.0"/>
+</graphics>
+</name>
+<orientation>
+<value>0</value>
+</orientation>
+<rate>
+<value>1.0</value>
+</rate>
+<timed>
+<value>false</value>
+</timed>
+<infiniteServer>
+<value>false</value>
+</infiniteServer>
+<priority>
+<value>1</value>
+</priority>
+</transition>
+<transition id="push">
+<graphics>
+<position x="450.0" y="195.0"/>
+</graphics>
+<name>
+<value>push</value>
+<graphics>
+<offset x="-5.0" y="35.0"/>
+</graphics>
+</name>
+<orientation>
+<value>0</value>
+</orientation>
+<rate>
+<value>1.0</value>
+</rate>
+<timed>
+<value>false</value>
+</timed>
+<infiniteServer>
+<value>false</value>
+</infiniteServer>
+<priority>
+<value>1</value>
+</priority>
+</transition>
+<transition id="scelta">
+<graphics>
+<position x="225.0" y="195.0"/>
+</graphics>
+<name>
+<value>scelta</value>
+<graphics>
+<offset x="-5.0" y="35.0"/>
+</graphics>
+</name>
+<orientation>
+<value>0</value>
+</orientation>
+<rate>
+<value>1.0</value>
+</rate>
+<timed>
+<value>false</value>
+</timed>
+<infiniteServer>
+<value>false</value>
+</infiniteServer>
+<priority>
+<value>1</value>
+</priority>
+</transition>
+<arc id="conferma lavoro to next componente" source="conferma lavoro" target="next componente">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="721" y="132" curvePoint="false"/>
+<arcpath id="001" x="1032" y="189" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="controlloPriorità to scelta" source="controlloPriorità" target="scelta">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="116" y="207" curvePoint="false"/>
+<arcpath id="001" x="231" y="207" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="fine riunione to next componente" source="fine riunione" target="next componente">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="946" y="312" curvePoint="false"/>
+<arcpath id="001" x="1037" y="203" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="implementazione to push" source="implementazione" target="push">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="372" y="162" curvePoint="false"/>
+<arcpath id="001" x="372" y="162" curvePoint="false"/>
+<arcpath id="002" x="457" y="202" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="modifica veloce to fine riunione" source="modifica veloce" target="fine riunione">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="836" y="312" curvePoint="false"/>
+<arcpath id="001" x="936" y="312" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="proponi modifiche to modifica veloce" source="proponi modifiche" target="modifica veloce">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="721" y="312" curvePoint="false"/>
+<arcpath id="001" x="807" y="312" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="proponi modifiche to reimplementazione necessaria" source="proponi modifiche" target="reimplementazione necessaria">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="717" y="327" curvePoint="false"/>
+<arcpath id="001" x="717" y="477" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="push to riunione del team" source="push" target="riunione del team">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="466" y="207" curvePoint="false"/>
+<arcpath id="001" x="567" y="207" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="reimplementazione necessaria to scelta" source="reimplementazione necessaria" target="scelta">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="704" y="484" curvePoint="false"/>
+<arcpath id="001" x="241" y="213" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="riunione del team to conferma lavoro" source="riunione del team" target="conferma lavoro">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="595" y="199" curvePoint="false"/>
+<arcpath id="001" x="711" y="132" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="riunione del team to proponi modifiche" source="riunione del team" target="proponi modifiche">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="593" y="216" curvePoint="false"/>
+<arcpath id="001" x="711" y="312" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="scelta to implementazione" source="scelta" target="implementazione">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="242" y="199" curvePoint="false"/>
+<arcpath id="001" x="342" y="166" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="scelta to timebox" source="scelta" target="timebox">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="242" y="206" curvePoint="false"/>
+<arcpath id="001" x="342" y="219" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="timebox to push" source="timebox" target="push">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="371" y="220" curvePoint="false"/>
+<arcpath id="001" x="456" y="212" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+</net>
+</pnml>
